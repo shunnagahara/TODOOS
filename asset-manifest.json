@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/TODOOS/static/js/main.07e9f2ee.chunk.js",
-    "main.js.map": "/TODOOS/static/js/main.07e9f2ee.chunk.js.map",
-    "runtime-main.js": "/TODOOS/static/js/runtime-main.97ca0807.js",
-    "runtime-main.js.map": "/TODOOS/static/js/runtime-main.97ca0807.js.map",
-    "static/js/2.4400f9c4.chunk.js": "/TODOOS/static/js/2.4400f9c4.chunk.js",
-    "static/js/2.4400f9c4.chunk.js.map": "/TODOOS/static/js/2.4400f9c4.chunk.js.map",
+    "main.js": "/TODOOS/static/js/main.fdaad4b1.chunk.js",
+    "main.js.map": "/TODOOS/static/js/main.fdaad4b1.chunk.js.map",
+    "runtime-main.js": "/TODOOS/static/js/runtime-main.1b2b55e2.js",
+    "runtime-main.js.map": "/TODOOS/static/js/runtime-main.1b2b55e2.js.map",
+    "static/js/2.e7c3f0d1.chunk.js": "/TODOOS/static/js/2.e7c3f0d1.chunk.js",
+    "static/js/2.e7c3f0d1.chunk.js.map": "/TODOOS/static/js/2.e7c3f0d1.chunk.js.map",
     "index.html": "/TODOOS/index.html",
-    "precache-manifest.5fbaf7e4b572d789ab2cc830281674b4.js": "/TODOOS/precache-manifest.5fbaf7e4b572d789ab2cc830281674b4.js",
+    "precache-manifest.b6c691593fc9ce1292c9ab55e678ec4a.js": "/TODOOS/precache-manifest.b6c691593fc9ce1292c9ab55e678ec4a.js",
     "service-worker.js": "/TODOOS/service-worker.js",
-    "static/js/2.4400f9c4.chunk.js.LICENSE": "/TODOOS/static/js/2.4400f9c4.chunk.js.LICENSE"
+    "static/js/2.e7c3f0d1.chunk.js.LICENSE": "/TODOOS/static/js/2.e7c3f0d1.chunk.js.LICENSE"
   },
   "entrypoints": [
-    "static/js/runtime-main.97ca0807.js",
-    "static/js/2.4400f9c4.chunk.js",
-    "static/js/main.07e9f2ee.chunk.js"
+    "static/js/runtime-main.1b2b55e2.js",
+    "static/js/2.e7c3f0d1.chunk.js",
+    "static/js/main.fdaad4b1.chunk.js"
   ]
 }
