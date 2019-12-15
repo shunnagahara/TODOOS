@@ -18,7 +18,20 @@ export default class Work extends Component {
     };
     this.handleAdd = this.handleAdd.bind(this);
     this.handleRemove = this.handleRemove.bind(this);
+    this.handleDone = this.handleDone.bind(this);
     this.handleChange = this.handleChange.bind(this);
+  }
+  getByteLength(str){
+    var length = 0;
+    for (var i = 0; i < str.length; i++) {
+      var c = str.charCodeAt(i);
+      if ((c >= 0x0 && c < 0x81) || (c === 0xf8f0) || (c >= 0xff61 && c < 0xffa0) || (c >= 0xf8f1 && c < 0xf8f4)) {
+        length += 1;
+      } else {
+        length += 2;
+      }
+    }
+    return length;
   }
   componentDidMount(){
     // LocalStorageから一覧を取得してstateに保存する
@@ -31,7 +44,7 @@ export default class Work extends Component {
   handleChange = (e) => {
     this.setState({initFlag: false});
     const key = e.target.name;
-    const value = e.target.value;
+    const value = this.getByteLength(e.target.value)
     const { info, message } = this.state;
 
     this.setState({
@@ -59,8 +72,19 @@ export default class Work extends Component {
     let json = JSON.stringify(this.state.todo)
     window.localStorage.setItem('work', json)
   }
-  // データ削除
   handleRemove(i){
+    // todo配列からi番目から1つ目のデータを除外
+    this.state.todo.splice(i,1);
+    // setStateでtodo配列を上書き
+    this.setState({todo: this.state.todo});
+    // LocalStorageからデータを取得して対象のlistを削除して保存する
+    let workLists = window.localStorage.getItem('work')
+    workLists = JSON.parse(workLists)
+    workLists.splice(i,1);
+    let json = JSON.stringify(workLists)
+    window.localStorage.setItem('work', json)
+  }
+  handleDone(i){
     // todo配列からi番目から1つ目のデータを除外
     this.state.todo.splice(i,1);
     // setStateでtodo配列を上書き
@@ -94,8 +118,8 @@ export default class Work extends Component {
         <h1 className="siimple-box-title siimple--color-white">Work</h1>
         <Form initFlag={this.state.initFlag} message={ this.state.message } handleAdd={this.handleAdd} handleChange={this.handleChange}/>
         <div className="siimple-rule"></div>
-        <TodoList todos={this.state.todo} handleRemove={this.handleRemove}/>
+        <TodoList todos={this.state.todo} handleRemove={this.handleRemove} handleDone={this.handleDone}/>
       </div>
-    );
+    )
   }
 }
