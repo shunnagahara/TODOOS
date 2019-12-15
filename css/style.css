@@ -1,3 +1,8 @@
+input[type=text] {
+  font-size: 16px;
+  transform: scale(0.8);
+}
+
 .ios-style-none {
   -webkit-appearance: none;
 }
@@ -28,6 +33,15 @@
   margin-right: 5px;
 }
 
+.m-right-10 {
+  margin-right: 10px;
+}
+
+.m-left-m-20 {
+  margin-left: -20px;
+}
+
 .m-bottom-10 {
   margin-bottom: 10px;
 }
+
