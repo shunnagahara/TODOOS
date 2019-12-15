@@ -11,9 +11,7 @@ export default class Top extends Component {
             <h3 className="siimple--color-black">Introduction</h3>
             <div className="siimple-rule"></div>
             <div className="siimple-paragraph siimple-paragraph--lead">
-            <p>This app is what it manage what you have to do.
-            You can manage work's and private's task.
-            I hope your managing is going to be better than now.</p>
+            <p>This app can help you manage what you have to do. You can manage your “work” and “private” tasks separately. I hope you can improve your managing skills better than before.</p>
             </div>
             <div className="siimple-footer-title">Yours truly,</div>
             <div className="siimple-footer-title">Shun Nagahara</div>
