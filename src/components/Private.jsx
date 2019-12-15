@@ -8,6 +8,7 @@ export default class Private extends Component {
     super(props);
     this.state = {
       todo: [],
+      initFlag: true,
       info: {
         title: '',
       },
@@ -28,6 +29,7 @@ export default class Private extends Component {
     }
   }
   handleChange = (e) => {
+    this.setState({initFlag: false});
     const key = e.target.name;
     const value = e.target.value;
     const { info, message } = this.state;
@@ -52,6 +54,7 @@ export default class Private extends Component {
     this.setState({todo: this.state.todo}); // 保存完了
     // inputのvalueを空に
     e.target.title.value = '';
+    this.setState({initFlag: true});
     // JSON形式でLocalStorageに保存する
     let json = JSON.stringify(this.state.todo)
     window.localStorage.setItem('private', json)
@@ -89,7 +92,7 @@ export default class Private extends Component {
     return (
       <div className="siimple-box siimple--bg-dark">
         <h1 className="siimple-box-title siimple--color-white">Private</h1>
-        <Form message={ this.state.message } handleAdd={this.handleAdd} handleChange={this.handleChange}/>
+        <Form initFlag={this.state.initFlag} message={ this.state.message } handleAdd={this.handleAdd} handleChange={this.handleChange}/>
         <div className="siimple-rule"></div>
         <TodoList todos={this.state.todo} handleRemove={this.handleRemove}/>
       </div>
