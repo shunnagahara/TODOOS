@@ -22,13 +22,13 @@ function Headers() {
           <Link to = "/TODOOS" style={style}>TOP</Link>
         </div>
         <div className="siimple-btn siimple-btn--orange m-right-5 fs12">
-          <Link to = "/TODOOS/work" style={style}>Work</Link>
+          <Link to = "/TODOOS/#/work" style={style}>Work</Link>
         </div>
         <div className="siimple-btn siimple-btn--yellow m-right-5 fs12">
-          <Link to = "/TODOOS/private" style={style}>Private</Link>
+          <Link to = "/TODOOS/#/private" style={style}>Private</Link>
         </div>
         <div className="siimple-btn siimple-btn--green fs12">
-          <Link to = "/TODOOS/done" style={style}>Done</Link>
+          <Link to = "/TODOOS/#/done" style={style}>Done</Link>
         </div>
       </div>
   </div>
@@ -42,9 +42,9 @@ export default class Menu extends Component {
         <div>
           {Headers()}
           <Route path="/TODOOS" exact component={Top}/>
-          <Route path="/TODOOS/work" component={Work}/>
-          <Route path="/TODOOS/private" component={Private}/>
-          <Route path="/TODOOS/done" component={Done}/>
+          <Route path="/TODOOS/#/work" component={Work}/>
+          <Route path="/TODOOS/#/private" component={Private}/>
+          <Route path="/TODOOS/#/done" component={Done}/>
         </div>
       </Router>
     );
