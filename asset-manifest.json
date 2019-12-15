@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/TODOOS/static/js/main.876db7cd.chunk.js",
-    "main.js.map": "/TODOOS/static/js/main.876db7cd.chunk.js.map",
+    "main.js": "/TODOOS/static/js/main.32b30b84.chunk.js",
+    "main.js.map": "/TODOOS/static/js/main.32b30b84.chunk.js.map",
     "runtime-main.js": "/TODOOS/static/js/runtime-main.97ca0807.js",
     "runtime-main.js.map": "/TODOOS/static/js/runtime-main.97ca0807.js.map",
     "static/js/2.1b8774d0.chunk.js": "/TODOOS/static/js/2.1b8774d0.chunk.js",
     "static/js/2.1b8774d0.chunk.js.map": "/TODOOS/static/js/2.1b8774d0.chunk.js.map",
     "index.html": "/TODOOS/index.html",
-    "precache-manifest.8db9debad3c93b992b0649e9a82abfd6.js": "/TODOOS/precache-manifest.8db9debad3c93b992b0649e9a82abfd6.js",
+    "precache-manifest.6dab012629c53052cb4c2f5cae056db5.js": "/TODOOS/precache-manifest.6dab012629c53052cb4c2f5cae056db5.js",
     "service-worker.js": "/TODOOS/service-worker.js",
     "static/js/2.1b8774d0.chunk.js.LICENSE": "/TODOOS/static/js/2.1b8774d0.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.97ca0807.js",
     "static/js/2.1b8774d0.chunk.js",
-    "static/js/main.876db7cd.chunk.js"
+    "static/js/main.32b30b84.chunk.js"
   ]
 }
